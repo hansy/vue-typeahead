@@ -73,6 +73,9 @@ exports.default = {
             _this.down();
           }
         }
+      }).catch(function (error) {
+        _this.loading = false;
+        _this.onError(error);
       });
     },
     fetch: function fetch() {
@@ -134,6 +137,7 @@ exports.default = {
     },
     onHit: function onHit() {
       _vue.util.warn('You need to implement the `onHit` method', this);
-    }
+    },
+    onError: function onError() {}
   }
 };
