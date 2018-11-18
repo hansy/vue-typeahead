@@ -8,7 +8,8 @@ export default {
       current: -1,
       loading: false,
       selectFirst: false,
-      queryParamName: 'q'
+      queryParamName: 'q',
+      errorMessage: undefined,
     }
   },
 
@@ -55,6 +56,7 @@ export default {
           }
         })
         .catch((error) => {
+          this.loading = false;
           this.onError(error);
         })
     },
@@ -131,7 +133,6 @@ export default {
     },
 
     onError () {
-      util.warn('You need to implement the `onError` method', this)
     }
   }
 }
