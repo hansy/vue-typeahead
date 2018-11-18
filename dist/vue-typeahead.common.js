@@ -74,7 +74,7 @@ exports.default = {
           }
         }
       }).catch(function (error) {
-        onError(error);
+        _this.onError(error);
       });
     },
     fetch: function fetch() {
