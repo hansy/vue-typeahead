@@ -28,7 +28,8 @@ exports.default = {
       current: -1,
       loading: false,
       selectFirst: false,
-      queryParamName: 'q'
+      queryParamName: 'q',
+      errorMessage: undefined
     };
   },
 
@@ -74,6 +75,7 @@ exports.default = {
           }
         }
       }).catch(function (error) {
+        _this.loading = false;
         _this.onError(error);
       });
     },
@@ -137,8 +139,6 @@ exports.default = {
     onHit: function onHit() {
       _vue.util.warn('You need to implement the `onHit` method', this);
     },
-    onError: function onError() {
-      _vue.util.warn('You need to implement the `onError` method', this);
-    }
+    onError: function onError() {}
   }
 };
