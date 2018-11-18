@@ -25,7 +25,8 @@
     "vue": "^1.0.21 || ^2.x.x"
   },
   "dependencies": {
-    "babel-runtime": "^6.0.0"
+    "babel-runtime": "^6.0.0",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "axios": "^0.15.3",
@@ -46,6 +47,6 @@
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.2.1",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0"
+    "webpack-dev-server": "^3.1.10"
   }
 }

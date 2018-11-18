@@ -105,6 +105,7 @@ exports.default = {
       this.items = [];
       this.query = '';
       this.loading = false;
+      this.onReset();
     },
     setActive: function setActive(index) {
       this.current = index;

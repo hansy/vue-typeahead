@@ -8,7 +8,7 @@ export default {
       current: -1,
       loading: false,
       selectFirst: false,
-      queryParamName: 'q'
+      queryParamName: 'q',
     }
   },
 
@@ -91,6 +91,7 @@ export default {
       this.items = []
       this.query = ''
       this.loading = false
+      this.onReset()
     },
 
     setActive (index) {
