@@ -28,8 +28,7 @@ exports.default = {
       current: -1,
       loading: false,
       selectFirst: false,
-      queryParamName: 'q',
-      errorMessage: undefined
+      queryParamName: 'q'
     };
   },
 
@@ -106,6 +105,7 @@ exports.default = {
       this.items = [];
       this.query = '';
       this.loading = false;
+      this.onReset();
     },
     setActive: function setActive(index) {
       this.current = index;
@@ -139,6 +139,7 @@ exports.default = {
     onHit: function onHit() {
       _vue.util.warn('You need to implement the `onHit` method', this);
     },
-    onError: function onError() {}
+    onError: function onError() {},
+    onReset: function onReset() {}
   }
 };

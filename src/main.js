@@ -9,7 +9,6 @@ export default {
       loading: false,
       selectFirst: false,
       queryParamName: 'q',
-      errorMessage: undefined,
     }
   },
 
@@ -92,6 +91,7 @@ export default {
       this.items = []
       this.query = ''
       this.loading = false
+      this.onReset()
     },
 
     setActive (index) {
@@ -133,6 +133,10 @@ export default {
     },
 
     onError () {
+    },
+
+    onReset() {
+
     }
   }
 }
